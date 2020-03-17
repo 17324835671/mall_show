@@ -1,0 +1,1 @@
+2020-03-17 17:59:53.902 [main-93] ERROR org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository 93 <init> - failed to load elasticsearch nodes : org.elasticsearch.index.mapper.MapperParsingException: analyzer [ik_max_word] not found for field [name]

@@ -2,7 +2,6 @@
 package com.phoenix.mallshow.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.phoenix.mallshow.component.TestKafkaListener;
 import com.phoenix.mallshow.mbg.mapper.PmsBrandMapper;
 import com.phoenix.mallshow.mbg.model.PmsBrand;
 import com.phoenix.mallshow.mbg.model.PmsBrandExample;

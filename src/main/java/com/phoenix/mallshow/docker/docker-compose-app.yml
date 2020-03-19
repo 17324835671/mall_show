@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mall-show:
+    image: mall-show/mallshow:0.0.1-SNAPSHOT
+    container_name: mall-show
+    ports:
+      - 8080:8080
+    external_links:
+      - mysql:mysql #可以用db这个域名访问mysql服务
+      - redis:redis #可以用redis这个域名访问redis服务
+      - mongo:mongo #可以用mongo这个域名访问mongo服务
+      - rabbitmq:rabbit #可以用rabbit这个域名访问rabbitmq服务
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务

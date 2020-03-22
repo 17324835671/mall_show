@@ -18,16 +18,18 @@ spring:
         max-idle: 8 # 连接池中的最大空闲连接
         min-idle: 0 # 连接池中的最小空闲连接
     timeout: 3000ms # 连接超时时间（毫秒）
+
   data:
-    elasticsearch:
-      repositories:
-        enabled: true
-      cluster-nodes: 101.200.80.154:9300 # es的连接地址及端口号
-      cluster-name: elasticsearch # es集群的名称
-    mongodb:
-      host: 101.200.80.154 # mongodb的连接地址
-      port: 27017 # mongodb的连接端口号
-      database: mall-port # mongodb的连接的数据库
+      elasticsearch:
+        repositories:
+         enabled: true
+        cluster-nodes: 101.200.80.154:9300 # es的连接地址及端口号
+        cluster-name: elasticsearch # es集群的名称
+      mongodb:
+        host: 101.200.80.154 # mongodb的连接地址
+        port: 27017 # mongodb的连接端口号
+        database: mall-port # mongodb的连接的数据库
+
   kafka:
       bootstrap-servers: 101.200.80.154:9092
       producer:
@@ -70,6 +72,4 @@ rabbitmq:
   publisher-confirms: true #如果对异步消息需要回调必须设置为true
 
 
-logging:
-  config: classpath:log4j2.xml # 指定log4j配置文件的位置
 
